@@ -1,7 +1,21 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch App",
+      "request": "launch",
+      "mainClass": "lib.App", // Replace with your main class if it's different
+      "classpath": [
+        "${workspaceFolder}/bin",
+        "${workspaceFolder}/lib/postgresql-42.5.4.jar",
+        "${workspaceFolder}/lib/jbcrypt-0.4.jar" // Include any other necessary jars here
+      ]
+    }
+  ],
+  "java.project.sourcePaths": ["."],
+  "java.project.referencedLibraries": [
+    "/Users/keyinstudent/Desktop/javafinalsprint4/javafinalsprint4/lib/postgresql-42.5.4.jar",
+    "/Users/keyinstudent/Desktop/javafinalsprint4/javafinalsprint4/lib/jbcrypt-0.4.jar"
+  ]
 }
